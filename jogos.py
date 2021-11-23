@@ -9,7 +9,7 @@ print("***********************************************")
 
 print("(1) JOGO DA FORCA (2) JOGO DA ADIVINHAÇÃO")
 
-jogo = int(input("Qual jogo você quer jogar?: "))
+jogo = int(input("Irmão, qual jogo você quer jogar??: "))
 
 if(jogo == 1):
     print("Jogando forca")
