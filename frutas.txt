@@ -11,3 +11,6 @@ acerola
 ameixa
 kiwi
 carambola
+pera
+mamao
+uva 
