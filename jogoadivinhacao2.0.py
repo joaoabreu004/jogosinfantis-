@@ -2,17 +2,17 @@ import random
 
 def jogar():
 
-    N = random.randrange(1,101)
+    N = random.randrange(1,151)
     total_tentativas = 0
 
     for rodada in range(1, total_tentativas + 1):
         print("tentativa {} de {}".format(rodada, total_tentativas))
-        chute_str = input("Digite um número entre 1 e 100!: ")
+        chute_str = input("Digite um número entre 1 e 150!: ")
         print("Você digitou o número:", chute_str)
         chute = int(chute_str)  # convertendo um valor de str para int
 
-        if (chute < 1 or chute > 100):
-            print("Você deve digitar um número entre 1 e 100!")
+        if (chute < 1 or chute > 150):
+            print("Você deve digitar um número entre 1 e 1000!")
             continue
         maior = chute > N
         menor = chute < N
