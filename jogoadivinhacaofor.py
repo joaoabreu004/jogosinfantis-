@@ -17,11 +17,11 @@ def jogar():
     nivel = int(input("Defina o nível: "))
 
     if (nivel == 1) :
-        total_tentativas = 20
+        total_tentativas = 30
     elif (nivel == 2):
-        total_tentativas = 10
+        total_tentativas = 15
     else:
-        total_tentativas = 5
+        total_tentativas = 10
 
 
     for rodada in range(1, total_tentativas + 1):
