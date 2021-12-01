@@ -17,11 +17,11 @@ def jogar():
     nivel = int(input("Defina o nível: "))
 
     if (nivel == 1) :
-        total_tentativas = 30
-    elif (nivel == 2):
         total_tentativas = 15
-    else:
+    elif (nivel == 2):
         total_tentativas = 10
+    else:
+        total_tentativas = 5
 
 
     for rodada in range(1, total_tentativas + 1):
@@ -31,7 +31,7 @@ def jogar():
         chute = int(chute_str)  # convertendo um valor de str para int
 
         if(chute < 1 or chute > 100):
-            print("Você deve digitar um número entre 1 e 150!")
+            print("Você deve digitar um número entre 1 e 100!")
             continue
         maior = chute > numero_secreto
         menor = chute < numero_secreto
