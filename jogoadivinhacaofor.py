@@ -30,7 +30,7 @@ def jogar():
         print("Você digitou o número:", chute_str)
         chute = int(chute_str)  # convertendo um valor de str para int
 
-        if(chute < 1 or chute > 101):
+        if(chute < 1 or chute > 100):
             print("Você deve digitar um número entre 1 e 150!")
             continue
         maior = chute > numero_secreto
