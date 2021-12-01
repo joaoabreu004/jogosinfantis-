@@ -7,7 +7,7 @@ def jogar():
     print("**********************************")
 
 
-    numero_secreto = random.randrange(1,151)
+    numero_secreto = random.randrange(1,101)
     total_tentativas = 0
     pontos = 1000
 
@@ -26,11 +26,11 @@ def jogar():
 
     for rodada in range(1, total_tentativas + 1):
         print("tentativa {} de {}".format(rodada, total_tentativas))
-        chute_str = input("Digite um número entre 1 e 150!: ")
+        chute_str = input("Digite um número entre 1 e 100!: ")
         print("Você digitou o número:", chute_str)
         chute = int(chute_str)  # convertendo um valor de str para int
 
-        if(chute < 1 or chute > 150):
+        if(chute < 1 or chute > 101):
             print("Você deve digitar um número entre 1 e 150!")
             continue
         maior = chute > numero_secreto
